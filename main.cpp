@@ -7,11 +7,14 @@
 
 using namespace std;
 
+// Each account needs a name and a balance assigned to it. We set that up here. Name will be string because of text
+// balance needs to be double because we are dealing with numbers that represent dollars and change.
 struct Account {
     string name;
     double balance;
 };
 
+// This container holds key-value pairs. Easy way to lookup account add and delete value
 map<string, Account> accounts;
 
 void menu();
